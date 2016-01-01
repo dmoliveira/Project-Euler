@@ -9,6 +9,7 @@ n = -1
 x, y = 0, 0
 
 for i=100:999, j=100:999
+    i < j && continue
     v = i*j
     if is_palindrome(string(v)) && v > n
         n = v
