@@ -1,5 +1,5 @@
-*.pwo
-*.pws
+*.swp
+*.swo
 *.csv
 *.tsv
 *.DS_Store
