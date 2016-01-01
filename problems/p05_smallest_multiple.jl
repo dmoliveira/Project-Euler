@@ -1,18 +1,18 @@
 #!/usr/bin/env julia
 
 # Parameters
-MAX_NUMBER = 1e10
-N = 1:20
+r = 1:20
+N = 1e10
 n = 2520
 
 # Solution
-while n < MAX_NUMBER
+while n < N 
     s = 0
-    for i = N
+    for i = first(r):last(r)
         n % i != 0 && break
         s += 1
     end
-    s == last(N) && break
+    s == last(r) && break
     n += 1
 end
 
